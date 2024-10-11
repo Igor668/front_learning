@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS internal style</title>
+
+    <style>
+        /* Type Selector */
+        h4,h6 {
+            color:red
+        }
+        p {
+            color: orange;
+            font-size: 30px;
+        }
+
+        /* Class Selector */
+        .p1{
+          color:aqua;
+          font-size: 24px;
+        }
+        .p2{
+          color: blueviolet;
+        }
+        h5.p1 {
+          color:red
+        }
+        /* 多種選擇器 */
+        .red{
+          color: red;
+        }
+        .fz40{
+          font-size: 22px;
+        }
+        .fwb{
+          font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS internal style</h1>
+    <hr>
+    <h2>Type Selector</h2>
+    <h6>h6</h6>
+    <h4>h4</h4>
+    <p>p element</p>
+    <hr>
+    <h2>Class Selector</h2>
+    <p class="p1">p1</p>
+    <p class="p2">p2</p>
+    <h5 class="p1">h5</h5>
+    <div class="p1">div</div>
+    <span class="red fz40 fwb">行內容器</span>
+    <hr>
+
+
+</body>
+</html>

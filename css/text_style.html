@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text_style</title>
+    <!-- 引入外部檔案 search google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <style>
+        /* 引入字型(要放在最上面以免需要套用的沒套用到)這類檔案容量過大 */
+        @font-face {
+            font-family: 'home_pen';
+            src: url(./home_pen.ttf);
+        }
+        /* 文字字型*/
+        .font1 {
+          font-family: "標楷體";
+        }
+
+        .font2 {
+          font-family: "新細明體";
+        }
+
+        .font3 {
+          font-family: "home_pen";
+        }
+        
+        .mix {
+          font-family: "Roboto Mono", "Chocolate Classical Sans";
+        }
+    </style>
+</head>
+<body>
+    <h2>文字字型</h2>
+    <h3 class="font1">一般文字1</h3>
+    <h3 class="font2">一般文字2</h3>
+    <h3 class="font3">一般文字3</h3>
+    <h3 calss="mix">一般文字4 aodfijoiajf</h3>    
+</body>
+</html>
