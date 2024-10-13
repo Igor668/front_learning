@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS權重</title>
+    <!-- Inlie Style > ID > Class > Element -->
+    <style>
+        * {
+            color: yellow;
+        }
+        h2 {
+            color: red;
+        }
+        .font1 {
+            color: blue;
+        }
+        #font2 {
+            color: green;
+        }
+        .font2 {
+            color: purple;
+        }
+        h2.font2 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="font2 font1">h2 element</h2>
+    <h2 class="font1" id="font2">h2 element</h2>
+    <h2 id="font2" style="color: pink;">h2 element</h2>
+    <h2>h2 element</h2>
+</body>
+</html>

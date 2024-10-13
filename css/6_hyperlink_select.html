@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyperlink select</title>
+    <link rel="stylesheet" href="./styles/hyperlink_select.css">
+</head>
+<body>
+    <h2>外部超連結</h2>
+    <a class="link" href="http://yahoo.com.tw">yahoo</a><br>
+    <a href="http://yahoo.com.tw" target="_blank">yahoo(開新視窗)</a>
+
+    <h2>網站內部網頁跳轉</h2>
+    <a href="./1_document_structure.html">document_structure</a><br>
+    <a href="./2_text_element.html">text_element</a><br>
+    <a href="./3_picture_element.html">picture_element</a><br>
+    <a href="./4_list_element.html">list_element</a><br>
+    <a href="./5_hyperlink_element.html">heperlink_elemnet</a><br>
+
+    <h2>單一網頁內部超連結(錨點)</h2>
+    <a class="anchor" href="#target1">錨點1</a>
+    <a class="anchor" href="#target2">錨點2</a>
+    <div id="target1">指定元素1</div>
+    <div style="height: 100vh;background-color: aqua;"></div>
+    <div id="target2">指定元素2</div>
+    <div style="height: 100vh;background-color: brown;"></div>
+
+    <h2>清單結合超連結(點擊跳轉範圍差異)</h2>
+    <ol>
+        <!-- 方式一 -->
+        <li>
+            <a href="http://yahoo.com.tw" target="_blank" style="background-color: aqua;">yahooooooo</a>
+        </li>
+        <!-- 方式二 -->
+         <a href="http://yahoo.com.tw>" target="_blank"><li style="background-color: aqua;">yahooooo</li></a>
+    </ol>
+    
+    <!-- subject:主旨 body:內容 %0a:換行-->
+    <h2>電子郵件超連結</h2>
+    <a href="mailto:shaing0319@gmail.com?subject=test&body=姓名: %0a請假:">email</a>
+
+    <h2>檔案檢視/下載</h2>
+    <a href="./favicon.ico" target="_blank">檢視</a><br>
+    <a href="./favicon.ico" download>下載</a>
+
+    <h2>電話撥號</h2>
+    <a href="tel:0266316588">isPan telphone</a>
+</body>
+</html>

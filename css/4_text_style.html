@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chocolate+Classical+Sans&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 
-    <style>
+    <>
         /* 引入字型(要放在最上面以免需要套用的沒套用到)這類檔案容量過大 */
         @font-face {
             font-family: 'home_pen';
@@ -31,6 +31,17 @@
         .mix {
           font-family: "Roboto Mono", "Chocolate Classical Sans";
         }
+
+        .box {
+          border: 2px solid black;
+          height: 100px;
+          text-align: center;
+          line-height: 100px;
+          /* line-height 限定單行文字方式，多行用padding*/
+        }
+        #theH1 {
+            color: purple;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +49,19 @@
     <h3 class="font1">一般文字1</h3>
     <h3 class="font2">一般文字2</h3>
     <h3 class="font3">一般文字3</h3>
-    <h3 calss="mix">一般文字4 aodfijoiajf</h3>    
+    <h3 calss="mix">一般文字4 aodfijoiajf</h3>
+    <hr>
+
+    <h2>文字垂直對齊</h2>
+    <div class="box">單行文字垂直對齊</div>
+    <hr>
+    <h2>ID選擇器</h2>
+    <h1 id="theH1">h1</h1>
+    <h2 id="theH1">h2</h2>
+
+    <script>
+        const theH1 = document.getElementById('theH1')
+        theH1.style.color="green";
+    </script>
 </body>
 </html>

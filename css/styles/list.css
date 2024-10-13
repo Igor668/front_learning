@@ -1,0 +1,20 @@
+.ul1{
+    list-style-type: circle;
+}
+
+.ol1{
+    list-style-type: decimal-leading-zero;
+}
+
+.ul2{
+    list-style-type: none;
+    list-style-image: url(../arrow.png);
+
+    background-color: pink;
+    list-style-position: inside; /*箭頭包在.ul2 li 顏色裡*/
+    text-align: center;
+}
+
+.ul2 li{ /*ul2 底下的li 所有*/
+    background-color: cadetblue;
+}

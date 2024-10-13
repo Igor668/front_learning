@@ -1,0 +1,45 @@
+.link:link{
+    text-decoration: none; /* 下底線隱藏 */
+    font-size: 30px;
+    color: darkblue;
+}
+
+a:visited{
+    color: green;
+}
+
+a:hover{
+    text-decoration: underline solid;
+    color: lightblue;
+}
+
+a:active{
+    color: blueviolet;
+}
+
+.anchor:link{ /*未被瀏覽*/
+    text-decoration: none; /* 下底線隱藏 */
+    font-size: 30px;
+    color: rgb(5, 245, 89);
+}
+
+.anchor:visited{ /* 瀏覽過 */
+    color: rgb(231, 248, 6);
+}
+
+.anchor:hover{ /*滑鼠移入未點擊過*/
+    text-decoration: underline solid;
+    color: rgb(170, 117, 138);
+}
+
+.anchor:active{ /*滑鼠移入已點擊過*/
+    color: rgb(35, 238, 200);
+}
+
+/*不管是否被瀏覽過 超連結按著不放的顏色*/
+.anchor:active,
+.annchor:visited:active{
+    color:black;
+    text-decoration: underline
+    solid black;
+}

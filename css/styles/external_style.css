@@ -1,0 +1,21 @@
+/* CSS 語法*/
+@import url("https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Noto+Sans+TC:wght@100..900&display=swap");
+
+* {
+    font-family: "Afacad Flux", "Noto Sans TC";
+}
+.subtitle {
+    font-family: 18px;
+}
+.subtitle span {
+    color: gray;
+    font-size: 16px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+figcaption {
+    color: gray;
+    font-size: 14px;
+}

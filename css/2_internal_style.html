@@ -36,6 +36,16 @@
         .fwb{
           font-weight: bold;
         }
+        /* ID 選擇器*/
+        #theH1 {
+          color: red;
+        }
+        /* 全域選擇器*/
+        * {
+          font-size: 70px;
+          font-weight: bold;
+          font-style: italic;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +63,12 @@
     <div class="p1">div</div>
     <span class="red fz40 fwb">行內容器</span>
     <hr>
-
-
+    <h2>ID選擇器</h2>
+    <h1 id="theH1">h1</h1>
+    <h2 id="theH1">h2</h2>
+    <script>
+        const theH1 = document.getElementById('theH1')
+        theH1.style.color="green";
+    </script>
 </body>
 </html>
